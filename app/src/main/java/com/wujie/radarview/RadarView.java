@@ -125,7 +125,7 @@ public class RadarView extends FrameLayout {
 
         mPaintArc = new Paint();
         mPaintArc.setAntiAlias(true);
-        mPaintArc.setStrokeWidth(15);
+        mPaintArc.setStrokeWidth(12);
         mPaintArc.setStyle(Paint.Style.STROKE);
 
         //随机生成的点，模拟雷达扫描结果

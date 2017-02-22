@@ -1,22 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15B96B"
-    tools:context="com.wujie.radarview.MainActivity">
+    android:orientation="vertical"
+   >
 
-   <com.wujie.radarview.RadarView
-       android:id="@+id/radar_view"
+   <View
+       android:id="@+id/wifi_acclerate_layout_top_1"
        android:layout_width="match_parent"
-       android:layout_height="match_parent"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_centerInParent="true"
-       android:text="98"
-       android:textSize="60sp"
-       android:textColor="#FFFFFF"/>
+       android:layout_height="352dp"
+       />
+
+
+   <View
+       android:id="@+id/wifi_acclerate_layout_top_2"
+       android:layout_width="match_parent"
+       android:layout_height="352dp"
+       android:background="@color/wifi_acclerate_green"
+       />
+
+
+   <RelativeLayout
+       android:id="@+id/wifi_acclerate_layout_top"
+       android:layout_width="match_parent"
+       android:layout_height="352dp"
+       android:visibility="visible"
+       >
+      <RelativeLayout
+          android:id="@+id/header"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/header_height"
+          >
+
+        <!-- <ImageButton
+             android:id="@+id/btn_back"
+             android:layout_width="56dp"
+             android:layout_height="match_parent"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:contentDescription="@string/back"
+             android:paddingLeft="@dimen/header_icon_padding_left"
+             android:paddingRight="26dp"
+             android:src="@drawable/header_btn_back_white_selector" />
+
+         <TextView
+             android:id="@+id/header_title"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="@string/wifi_acclerate_tittle"
+             android:textColor="@color/white"
+             android:textSize="@dimen/first_title_font_size" />-->
+      </RelativeLayout>
+
+
+      <RelativeLayout
+          android:id="@+id/wifi_acclerate_layout_acclerate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/header"
+          android:paddingTop="20dp"
+          android:visibility="visible"
+          >
+
+         <RelativeLayout
+             android:id="@+id/wifi_acclerate_layout_animator"
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_centerHorizontal="true"
+             >
+
+            <com.wujie.radarview.view.RadarView
+                android:id="@+id/wifi_acclerate_radar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+            <com.wujie.radarview.view.RaderWheelView
+                android:id="@+id/wifi_acclerate_radar_wheel_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+               <TextView
+                   android:id="@+id/wifi_acclerate_tv_score"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   android:text="100"
+                   android:textColor="@color/white"
+                   android:textSize="48sp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="分"
+                   android:textSize="@dimen/font_14"
+                   android:textColor="@color/white"
+                   android:layout_alignTop="@+id/wifi_acclerate_tv_score"
+                   android:layout_toRightOf="@+id/wifi_acclerate_tv_score"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentEnd="true" />
+               <Button
+                   android:id="@+id/wifi_acclerate_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="28dp"
+
+                   android:layout_below="@+id/wifi_acclerate_tv_score"
+                   android:text="立即优化"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/font_12"
+                   android:layout_centerHorizontal="true"
+                   style="?android:attr/borderlessButtonStyle"
+                   android:visibility="gone"/>
+            </RelativeLayout>
+
+
+
+
+         </RelativeLayout>
+
+         <TextView
+             android:id="@+id/wifi_acclerate_tv_tip"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/wifi_acclerate_layout_animator"
+             android:gravity="center"
+             android:paddingTop="15dp"
+             android:paddingLeft="@dimen/basic_padding_left"
+             android:paddingRight="@dimen/basic_padding_right"
+
+             android:textColor="@color/white"
+             android:visibility="invisible"
+             android:textSize="@dimen/edit_text_size" />
+         <TextView
+             android:id="@+id/wifi_acclerate_tv_check"
+             android:layout_width="match_parent"
+             android:layout_height="42dp"
+             android:layout_below="@id/wifi_acclerate_tv_tip"
+             android:gravity="center_vertical"
+             android:paddingLeft="@dimen/basic_padding_left"
+             android:paddingRight="@dimen/basic_padding_right"
+             android:singleLine="true"
+
+             android:textColor="@color/white"
+             android:textSize="@dimen/font_14"
+             />
+         <!--<ProgressBar-->
+         <!--android:id="@+id/wifi_acclerate_progressbar"-->
+         <!--style="@style/usb_progressbar_style"-->
+         <!--android:layout_width="match_parent"-->
+         <!--android:layout_height="wrap_content"-->
+         <!--android:progress="0"-->
+         <!--android:progressDrawable="@drawable/wifi_acclerate_progressbar"-->
+         <!--android:layout_below="@id/wifi_acclerate_tv_check"-->
+         <!--/>-->
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/wifi_acclerate_layout_optimize"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingTop="20dp"
+          android:layout_below="@id/header"
+          android:visibility="gone">
+
+         <RelativeLayout
+             android:id="@+id/wifi_optimize_layout_animator"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="202dp"
+                android:layout_height="202dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/circle3"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/circle2"/>
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/circle3"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+               <TextView
+                   android:id="@+id/wifi_acclerate_tv_optimze_core"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:text="90"
+                   android:textSize="48sp"
+                   android:textColor="#FFFFFF"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:textSize="@dimen/font_14"
+                   android:textColor="@color/white"
+                   android:layout_alignTop="@+id/wifi_acclerate_tv_optimze_core"
+                   android:layout_toRightOf="@+id/wifi_acclerate_tv_optimze_core"
+                   android:layout_toEndOf="@+id/wifi_acclerate_tv_optimze_core" />
+            </RelativeLayout>
+
+
+         </RelativeLayout>
+         <TextView
+             android:id="@+id/wifi_optimize_tv_tip"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/wifi_optimize_layout_animator"
+             android:gravity="center"
+             android:paddingBottom="38dp"
+             android:paddingTop="14dp"
+
+             android:textColor="@color/white"
+             android:textSize="@dimen/edit_text_size" />
+      </RelativeLayout>
+
+
+
+   </RelativeLayout>
+
+
+>
 
 
 </RelativeLayout>

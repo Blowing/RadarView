@@ -1,7 +1,10 @@
 package com.wujie.radarview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -27,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 mRadarView.start();
             }
         }, 4000);
+        Button button = (Button) findViewById(R.id.click);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+            }
+        });
 
 //        timer.schedule(new TimerTask() {
 //            @Override
@@ -35,4 +46,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        }, 3000);
     }
+
+
 }

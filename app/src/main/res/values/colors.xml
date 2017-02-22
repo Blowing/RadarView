@@ -3,4 +3,200 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="light_x_white">#cbffffff</color>
+    <color name="orange">#ff8a01</color>
+    <color name="deep_gray">#666666</color>
+    <color name="gray">#888888</color>
+    <color name="light_gray">#b3b3b3</color>
+    <color name="light_orange">#fbb477</color>
+    <color name="dark_orange">#c87000</color>
+    <color name="translucent_80_dark">#cc000000</color>
+    <color name="translucent_light">#33FFFFFF</color>
+    <color name="light_s_gray">#cccccc</color>
+    <color name="deep_s_gray">#454545</color>
+    <color name="deep_ss_gray">#333333</color>
+    <color name="list_line">#c8c8ca</color>
+    <color name="shape_view">#000</color>
+    <color name="light_black">#4A4A4A</color>
+    <!-- 选择器 -->
+    <color name="split_line_gray">#B8B8B8</color>
+    <color name="picker_bar_bg">#F5F5F5</color>
+
+    <color name="limited">#D00000FF</color>
+    <color name="unlimited">#777</color>
+
+    <!-- 常用文字颜色 -->
+    <color name="main_tips_gray">#757575</color>
+    <color name="secondary_tips_gray">#b1b1b1</color>
+    <color name="hint_gray">#cccccc</color>
+    <color name="speed_limited_gray">#797979</color>
+    <color name="add_blacklist_gray">#6a6a6a</color>
+    <color name="text_deep_gray">#7a7a7a</color>
+    <color name="version_number">#a0a0a0</color>
+    <color name="offline_gray">#cbcbcb</color>
+    <color name="black">#000000</color>
+
+    <!-- 界面主色调 -->
+    <color name="bg_gray">#e6e6e6</color>
+    <color name="tenda_orange">#ed6d00</color>
+    <color name="err_info_red">#ee0000</color>
+    <color name="bg_light_orange">#e6e6e6</color>
+
+    <color name="title_btn">#d16000</color>
+    <color name="title_btn_pressed">#b35200</color>
+
+    <color name="tenda_orange_pressed">#e95701</color>
+    <color name="dialog_button_gray">#818181</color>
+    <color name="dialog_button_gray_pressed">#707070</color>
+    <color name="dialog_button_gray_disabled">#cccccc</color>
+
+    <color name="divide_line_gray">#c9c9c9</color>
+    <color name="divide_line_orange">#e9c7ac</color>
+
+    <color name="main_disconnected_gray">#959595</color>
+    <color name="main_disconnected_deep_gray">#818181</color>
+    <color name="deep_orange">#e54900</color>
+
+    <color name="item_pressed">#eaeaea</color>
+
+    <color name="reboot_red">#e61c1c</color>
+    <color name="reboot_red_pressed">#c01213</color>
+
+    <color name="btn_edge_gray">#d2d2d2</color>
+    <color name="bg_light_gray">#F2F2F2</color>
+
+    <color name="router_offline_gray">#a2a2a2</color>
+    <color name="router_online_blue">#02a0ea</color>
+
+    <color name="tenda_orange_center">#FF8822</color>
+
+    <color name="green_line">#0aa74b</color>
+
+    <color name="list_divide_line">#c8c8ca</color>
+
+    <color name="half_transparent">#33000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="safe_transparent">#00000001</color>
+    <color name="nav_textpass">#4db0ec</color>
+
+    <!-- 列表框分隔栏颜色 -->
+
+    <color name="darkGray">#bebebe</color>
+    <color name="lightBlue">#009CFF</color>
+    <color name="blue">#009CFF</color>
+
+    <!-- 红色 -->
+    <color name="red">#990000</color>
+
+    <!-- 不可用颜色 -->
+    <color name="disable">#88cfcfcf</color>
+
+    <item name="disabled_alpha_material_dark" format="float" type="dimen">0.30</item>
+    <color name="custom_view_color_0">#f3c12e</color>
+    <color name="custom_view_color_1">#bace2f</color>
+    <color name="custom_view_color_2">#83d1dd</color>
+    <color name="custom_view_bg">#ecececff</color>
+
+    <!--LoadingButton的颜色-->
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+
+
+    <color name="navigation_orange">#FF642B</color>
+    <color name="navigation_light_orange">#4EFF642B</color>
+    <color name="item_orange">#FF7644</color>
+
+    <color name="basic_bg">#FBFAF9</color>
+    <color name="basic_orange_bg">#FFFF642B</color>
+    <color name="common_question_a_bg">#F7F6F6</color>
+    <color name="first_title_font_color">#222222</color>
+    <color name="second_title_font_color">#444444</color>
+    <color name="third_title_font_color">#555555</color>
+    <color name="edit_text_color">#666666</color>
+    <color name="common_question_a_font_color">#777777</color>
+    <color name="cache_font_color">#999999</color>
+    <color name="edit_hint_color">#CCCCCC</color>
+    <color name="btn_solid_color">#FFF3EE</color>
+    <color name="btn_stoke_color">#FFFF642B</color>
+    <color name="light_blue">#679FDD</color>
+    <color name="light_white">#eeeeee</color>
+    <color name="toolbox_bg_press">#F7F7F7</color>
+
+    <color name="online_item_title_color">#444444</color>
+    <color name="offline_item_title_coclor">#666666</color>
+    <color name="item_s_gray">#B5B5B5</color>
+    <color name="item_m_gray">#999999</color>
+    <color name="item_s_line">#59ffffff</color>
+    <color name="item_offline_devices_bg">#F5F5F5</color>
+    <color name="device_manage_rate_unit_white">#CCFFFFFF</color>
+
+    <color name="btn_selected_orange">#FF642B</color>
+    <color name="btn_no_selected_gray">#CCCCCC</color>
+    <color name="edittext_hint_color_gray">#C8C8C8</color>
+
+
+    <color name="dialog_plus_footer_btns_stroke_gray">#FFCCCCCC</color>
+    <color name="dialog_plus_footer_btns_solid_gray">#FFF7F7F7</color>
+    <color name="dialog_plus_footer_btns_blue">#0076FF</color>
+    <color name="dialog_plus_center_bg_white0">#80FFFFFF</color>
+    <color name="dialog_plus_center_bg_white1">#77FFFFFF</color>
+    <color name="dialog_plus_center_bg_press_white1">#53FFFFFF</color>
+    <color name="dialog_plus_center_bg_white2">#CCFCFCFC</color>
+    <color name="dialog_plus_center_bg_press_white2">#8fFCFCFC</color>
+    <color name="dialog_plus_center_bg_gray1">#4D4D4D</color>
+    <color name="dialog_plus_center_bg_gray2">#C74D4D4D</color>
+    <color name="device_info_line_gray">#CCCCCC</color>
+    <color name="device_item_line_gray">#99CCCCCC</color>
+    <color name="dialog_line_color">#c64D4D4D</color>
+    <color name="confirm_red_color">#FE3824</color>
+    <color name="light_green_color">#15B96B</color>
+
+    <color name="signal_purple_0">#612C9E</color>
+    <color name="signal_purple_1">#855BB5</color>
+    <color name="signal_purple_2">#B59BD4</color>
+    <color name="signal_purple_3">#F9F4FE</color>
+    <color name="guest_net_red">#EE6E74</color>
+    <color name="toolbox_blue">#439DD1</color>
+
+    <color name="press_white_color">#99FFFFFF</color>
+
+
+    <color name="safe_gray">#79FFFFFF</color>
+    <color name="bind_router_s_white">#FFF6EF</color>
+    <color name="safe_check_s_white">#9CFFFFFF</color>
+    <color name="safe_check_green">#15B96B</color>
+    <color name="safe_check_orange">#F29336</color>
+    <color name="safe_check_red">#EC6066</color>
+    <color name="safe_mark_white">#DCFFFFFF</color>
+    <color name="safe_xx_translate">#37FFFFFF</color>
+    <color name="press_white">#99FFFFFF</color>
+    <color name="xblue">#999999</color>
+    <color name="router_update_tip_red">#FFFF5151</color>
+    <color name="main_bottom_bg_color">#F9F9F9</color>
+    <color name="toast_bg_color">#b8313131</color>
+    <color name="overlay_bg_color">#80000000</color>
+
+    <color name="wifi_acclerate_green">#15B96B</color>
+    <color name="wifi_acclerate_orange">#F29336</color>
+    <color name="wifi_acclerate_red">#EC6066</color>
+    <color name="snack_bg">#FFF4F4</color>
+    <color name="offline_router_s_white">#B2FFFFFF</color>
+
+    <color name="safe_progress_green">#008747</color>
+    <color name="safe_progress_s_green">#CC008747</color>
+    <color name="safe_progress_ss_green">#88008747</color>
+    <color name="ss_white">#77FFFFFF</color>
+    <color name="ss_black_title">#030303</color>
 </resources>
+
+
+
